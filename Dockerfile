@@ -16,5 +16,5 @@ RUN set -eux \
         && unzip protoc-3.12.0-linux-x86_64.zip -d /root/.local && rm -f protoc-3.12.0-linux-x86_64.zip \
         && go get google.golang.org/grpc \
         && go get github.com/lib/pq \
-	&& go get gorilla/websocket
+	&& go get github.com/gorilla/websocket
 
