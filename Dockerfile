@@ -10,7 +10,7 @@ ENV PATH $PATH:/usr/local/go/bin:/root/.local/bin:/root/go/bin
 # 安装
 
 RUN set -eux \
-	&& wget wget https://dl.google.com/go/go1.13.8.linux-amd64.tar.gz \
+	&& wget https://dl.google.com/go/go1.13.8.linux-amd64.tar.gz \
         && tar -C /usr/local -xzf go1.13.8.linux-amd64.tar.gz && rm -f go1.13.8.linux-amd64.tar.gz \
         && wget https://github.com/protocolbuffers/protobuf/releases/download/v3.12.0/protoc-3.12.0-linux-x86_64.zip \
         && unzip protoc-3.12.0-linux-x86_64.zip -d /root/.local && rm -f protoc-3.12.0-linux-x86_64.zip \
