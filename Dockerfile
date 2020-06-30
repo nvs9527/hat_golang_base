@@ -15,6 +15,7 @@ RUN set -eux \
         && wget https://github.com/protocolbuffers/protobuf/releases/download/v3.12.0/protoc-3.12.0-linux-x86_64.zip \
         && unzip protoc-3.12.0-linux-x86_64.zip -d /root/.local && rm -f protoc-3.12.0-linux-x86_64.zip \
         && go get google.golang.org/grpc \
+        && go get github.com/golang/protobuf/protoc-gen-go \
         && go get github.com/lib/pq \
 	&& go get github.com/gorilla/websocket
 
