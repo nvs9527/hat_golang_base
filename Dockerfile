@@ -5,7 +5,7 @@ RUN yum -y install unzip
 
 #配置环境变量(没有的目录也先配置上)
 ENV PATH $PATH:/usr/local/go/bin:/root/.local/bin:/root/go/bin
- 
+ENV GO111MODULE on 
   
 # 安装
 
@@ -18,4 +18,5 @@ RUN set -eux \
         && go get github.com/golang/protobuf/protoc-gen-go \
         && go get github.com/lib/pq \
 	&& go get github.com/gorilla/websocket
+	&& go get github.com/robfig/cron/v3@v3.0.0
 
