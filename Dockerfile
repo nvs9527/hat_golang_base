@@ -17,6 +17,6 @@ RUN set -eux \
         && go get google.golang.org/grpc \
         && go get github.com/golang/protobuf/protoc-gen-go \
         && go get github.com/lib/pq \
-	&& go get github.com/gorilla/websocket
+	&& go get github.com/gorilla/websocket \
 	&& go get github.com/robfig/cron/v3@v3.0.0
 
